@@ -1,10 +1,14 @@
 import React from 'react';
-import Counter from "./Components/Counter"
+import Counter from "./Components/Counter/Counter"
+import Landing from "./Components/Landing/Landing";
 
 function App() {
   return (
-    <Counter />
-  );
+    <>
+      <Landing />
+      <Counter />
+    </>
+  )
 }
 
 export default App;

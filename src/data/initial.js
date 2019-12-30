@@ -1,7 +1,7 @@
 const initial = {
     totalTeams: 0,
     totalPlayers: 0,
-    playersPerTeam: 0,
+    stage: 0,
     players: [],
     teams: []
 }

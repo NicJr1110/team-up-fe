@@ -5,7 +5,7 @@ class Counter extends Component {
     constructor(props) {
         super(props);
         this.state={
-            value: 1,
+            value: 2,
         };
         this.handleAdd = this.handleAdd.bind(this);
         this.handleMinus = this.handleMinus.bind(this);
@@ -38,21 +38,26 @@ class Counter extends Component {
         e.preventDefault();
 
        this.props.handleSubmit(value);
+       this.props.handleProgress();
 
     }
 
 
     render() {
         let { value } = this.state;
-        let { children } = this.props;
+        let { children, stage } = this.props;
         return (
         <>
-            <br/>
-            <h4>{ children }</h4>
-            <p>{ value }</p>
-            <Button handleClick={ this.handleAdd }>+</Button>
-            <Button handleClick={ this.handleMinus }>-</Button>
-            <Button handleClick={ this.handleSave }>Next</Button>
+            { stage !== 1 ? null :
+            <>
+                
+                <h4>{ children }</h4>
+                <p>{ value }</p>
+                <Button handleClick={ this.handleAdd }>+</Button>
+                <Button handleClick={ this.handleMinus }>-</Button>
+                <Button handleClick={ this.handleSave }>Next</Button>
+            </>
+            }
         </>
         );
     }

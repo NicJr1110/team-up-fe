@@ -1,11 +1,18 @@
 import { connect } from 'react-redux';
 import Counter from "./Counter";
-import { handleTeamCount } from "../../Data/Actions/actions";
+import { handleTeamCount, handleProgress } from "../../Data/Actions/actions";
+
+const mapStateToProps = state => {
+    return {
+        stage: state.stage,
+    }
+}
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleSubmit: (value) => dispatch(handleTeamCount(value))
+        handleSubmit: (value) => dispatch(handleTeamCount(value)),
+        handleProgress: () => dispatch(handleProgress()),
     };
 };
 
-export default connect(null, mapDispatchToProps)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);

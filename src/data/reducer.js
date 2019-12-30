@@ -24,12 +24,14 @@ function splitTeams(arr, chunkCount) {
       const chunk = newArr.slice(0, chunkSize);
       chunks.push(chunk);
       newArr = newArr.slice(chunkSize);
-      console.log(chunkSize);
+      
     }
     return chunks;
 }
 
 const generateTeams = (state) => ({...state, teams: (splitTeams(state.players, state.totalTeams))});
+
+const progressStage = (state) => ({...state, stage: state.stage + 1});
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -37,6 +39,7 @@ const reducer = (state, action) => {
         case "savePlayerCount": return savePlayerTotal(state, action);
         case "addPlayer": return addPlayer(state,action);
         case "splitTeams": return generateTeams(state);
+        case "progressStage": return progressStage(state);
         default: return state;
     }
 }

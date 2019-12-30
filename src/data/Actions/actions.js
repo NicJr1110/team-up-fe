@@ -26,3 +26,9 @@ export const handleSplitTeam = () => {
         type: "splitTeams"
     }
 }
+
+export const handleProgress = () => {
+    return {
+        type: "progressStage"
+    }
+}

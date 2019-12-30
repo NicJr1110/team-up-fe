@@ -34,6 +34,7 @@ class InputPlayer extends Component {
     }
 
     render() {
+        let { name } = this.state;
         return (
         <>
             <label>Name</label>
@@ -41,6 +42,7 @@ class InputPlayer extends Component {
                 onChange={ this.handleChangeName }
                 type="text" 
                 placeholder="Enter Player Name"
+                value = { name }
                 required >
             </input>
             <Button handleClick={ this.handleSubmit }>Add</Button>

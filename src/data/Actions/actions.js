@@ -20,3 +20,9 @@ export const handleAddPlayer = (name) => {
         name: name
     }
 }
+
+export const handleSplitTeam = () => {
+    return {
+        type: "splitTeams"
+    }
+}

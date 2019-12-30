@@ -2,11 +2,14 @@ import React from "react";
 
 const Button = ({ 
     handleClick,
-    children 
+    children,
+    disabled
 }) => (
   <div>
-    <button onClick={ handleClick }
-    >{ children }</button>
+    <button 
+     onClick={ handleClick }
+     disabled={ disabled ? true : null}
+    >{ children }</button> 
   </div>
 );
 

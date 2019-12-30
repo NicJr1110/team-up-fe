@@ -3,13 +3,16 @@ import InputPlayer from "../InputPlayer";
 import PlayerList from "../PlayerList";
 import Button from "../Button/Button";
 
-const InputPlayerGroup = ({ stage, handleClick }) => (
+const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
     <>
         { stage !== 2 ? null :
         <>
             <InputPlayer/>
             <PlayerList/>
-            <Button handleClick={ handleClick }>Next</Button>
+            <Button 
+                disabled={ players.length < totalTeams ? true : false}
+                handleClick={ handleClick }
+            >Next</Button> 
         </>
         }
     </>

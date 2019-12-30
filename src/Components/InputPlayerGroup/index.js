@@ -6,6 +6,9 @@ import { handleProgress } from "../../Data/Actions/actions"
 const mapStateToProps = state => {
     return {
         stage: state.stage,
+        players: state.players,
+        totalTeams: state.totalTeams,
+
     }
 }
 const mapDispatchToProps = dispatch => {

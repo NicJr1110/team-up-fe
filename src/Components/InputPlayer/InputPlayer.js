@@ -45,7 +45,10 @@ class InputPlayer extends Component {
                 value = { name }
                 required >
             </input>
-            <Button handleClick={ this.handleSubmit }>Add</Button>
+            <Button
+             disabled={ name === "" ? true : false }
+             handleClick={ this.handleSubmit }
+             >Add</Button>
         </>
         );
     }

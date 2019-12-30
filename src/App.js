@@ -5,6 +5,7 @@ import Landing from "./Components/Landing";
 import InputPlayerGroup from "./Components/InputPlayerGroup";
 //import PlayerList from "./Components/PlayerList";
 import TeamSplitter from "./Components/TeamSplitter";
+import TeamCards from "./Components/TeamCards"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TeamCounter max={ 9 } min={ 2 }>Team</TeamCounter> 
       <InputPlayerGroup/>
       <TeamSplitter />
+      <TeamCards/>
     </>
   )
 }

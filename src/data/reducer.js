@@ -1,12 +1,9 @@
-import initial from "./initial";
 
-const addTeamCount = state => ({ ...state, totalTeams: state.totalTeams + 1});
-const minusTeamCount = state => ({ ...state, totalTeams: state.totalTeams - 1});
+const saveTeamTotal = (state, { value }) => ({ ...state, totalTeams: value })
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case "increment": return addTeamCount(state);
-        case "decrement": return minusTeamCount(state);
+        case "saveTeamCount": return saveTeamTotal(state, action);
         default: return state;
     }
 }

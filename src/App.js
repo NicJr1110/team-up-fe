@@ -1,12 +1,12 @@
 import React from 'react';
-import Counter from "./Components/Counter/Counter"
+import TeamCounter from "./Components/Counter/TeamCounter"
 import Landing from "./Components/Landing/Landing";
 
 function App() {
   return (
     <>
       <Landing />
-      <Counter />
+      <TeamCounter max={ 9 } min={ 0 }>Team</TeamCounter>
     </>
   )
 }

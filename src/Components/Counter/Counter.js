@@ -1,45 +1,58 @@
 import React, { Component } from 'react';
+import Button from '../Button/Button'
 
 class Counter extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            value: 0
+        this.state={
+            value: 0,
         };
-        this.min = 0
-
-        this.handleAddStep = this.handleAddStep.bind(this);
-        this.handleMinusStep = this.handleMinusStep.bind(this);
+        this.handleAdd = this.handleAdd.bind(this);
+        this.handleMinus = this.handleMinus.bind(this);
+        this.handleSave = this.handleSave.bind(this);
         
     }
 
-    handleAddStep() {
+    handleAdd() {
+        let { max  } = this.props;
         let { value } = this.state;
+        let sum = value + 1;
         this.setState({
-            value: value + 1
-        })
+            value: sum >= max ? max : sum
+        }); 
     }
 
-    handleMinusStep() {
-        let min = 0
+    handleMinus() {
+        let { min } = this.props;
         let { value } = this.state;
         let sum = value - 1;
         this.setState({
             value: sum <= min ? min : sum
-        })
+        });
+    
+    }
+
+    handleSave(e) {
+        
+        let { value } = this.state;
+        e.preventDefault();
+
+       this.props.handleSubmit(value);
+
     }
 
 
     render() {
-        let { value } = this.state
-
+        let { value } = this.state;
+        let { children } = this.props;
         return (
         <>
             <br/>
-            <h4> Teams</h4>
+            <h4>{ children }</h4>
             <p>{ value }</p>
-            <button className="btn btn-primary" onClick={ this.handleAddStep }>+</button>
-            <button className="btn btn-primary" onClick={ this.handleMinusStep }>-</button>
+            <Button handleClick={ this.handleAdd }>+</Button>
+            <Button handleClick={ this.handleMinus }>-</Button>
+            <Button handleClick={ this.handleSave }>Next</Button>
         </>
         );
     }

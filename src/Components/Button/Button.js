@@ -1,22 +1,12 @@
 import React from "react";
 
-const Button = ({
-  handleIncrement,
-  handleDecrement,
-  handleReset,
+const Button = ({ 
+    handleClick,
+    children 
 }) => (
   <div>
-    <button
-      onClick={ handleIncrement }
-    >+</button>
-
-    <button
-      onClick={ handleDecrement }
-    >-</button>
-
-    <button
-      onClick={ handleReset }
-    >Reset</button>
+    <button onClick={ handleClick }
+    >{ children }</button>
   </div>
 );
 

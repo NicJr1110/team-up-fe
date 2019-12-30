@@ -6,3 +6,17 @@ export const handleTeamCount = (value) => {
         value: +value
     }
 }
+
+export const handlePlayerCount = (value) => {
+    return {
+        type: "savePlayerCount",
+        value: +value
+    }
+}
+
+export const handleAddPlayer = (name) => {
+    return {
+        type:"addPlayer",
+        name: name
+    }
+}

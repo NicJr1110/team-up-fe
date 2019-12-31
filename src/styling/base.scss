@@ -1,10 +1,13 @@
 body{
     background-color: #A7E2E3;
+    color: $primary-colour;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: white;
+    color: $primary-colour;
 }
+
+
 
 .background-1{
   position: relative;
@@ -14,7 +17,7 @@ h1,h2,h3,h4,h5,h6 {
     position:absolute;
     top:-50vh;
     margin: 0 auto;
-    background-color:#F2EFEA;
+    background-color:$accent-1;
     border-radius: 100vh;
     min-height:100vh;
     min-width:100vw;
@@ -37,11 +40,12 @@ h1,h2,h3,h4,h5,h6 {
 .title{
     height: 50vh;
     h1{
-    color: #394053;
+    color: $primary-colour;
     }
     p{
-        color: #394053; 
+        color: $primary-colour;
     }
+    
 }
 
 .start{

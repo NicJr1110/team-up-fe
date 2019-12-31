@@ -1,0 +1,23 @@
+.counter-container{
+    height:100vh;
+    justify-content: space-evenly;
+}
+
+.counter {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    
+
+}
+
+.counter-value {
+    font-size: 10rem;
+    color: white;
+    width: 100px;
+   
+   
+
+
+}

@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import "./styling/variables.scss";
+@import "./styling/base.scss";
+@import "./styling/TeamCards.scss";
+@import "./styling/Buttons.scss";
+@import "./styling/counter.scss";
+@import "./styling/InputPlayer.scss";
+//@import "../node_modules/flickity/css/flickity.css";
+

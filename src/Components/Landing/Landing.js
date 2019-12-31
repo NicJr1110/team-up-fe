@@ -8,10 +8,10 @@ const Landing = ({ handleClick,stage }) => (
             <div className="bg-circle"></div>
             <div className="flex-col-centre title">
                 <h1> TEAM UP</h1>
-                <p>Lorem ipsum</p>
+                <p>Random Team Generator</p>
             </div>
            
-            <Button className="btn btn-main start flex-col-centre" handleClick={ handleClick }> Start </Button>
+            <Button className="btn btn-main start flex-col-centre" handleClick={ handleClick }>Let's Go!</Button>
             
         </div >
         }

@@ -6,15 +6,13 @@ import InputPlayerGroup from "./Components/InputPlayerGroup";
 //import PlayerList from "./Components/PlayerList";
 import TeamSplitter from "./Components/TeamSplitter";
 import TeamCards from "./Components/TeamCards";
+import Application from "./Components/Application";
 
 function App() {
   return (
     <>
       <Landing />
-      <TeamCounter max={ 9 } min={ 2 }>Number of Teams</TeamCounter> 
-      <InputPlayerGroup/>
-      <TeamSplitter />
-      <TeamCards/>
+      <Application/>
     </>
   )
 }

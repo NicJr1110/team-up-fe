@@ -1,0 +1,57 @@
+.background-1{
+    position: relative;
+    
+}
+
+.bg-circle{
+    position:absolute;
+    top:-50vh;
+    margin: 0 auto;
+    background-color:$accent-1;
+    border-radius: 100vh;
+    min-height:100vh;
+    min-width:100vw;
+    z-index: -1;
+    
+}
+
+.bg-circle-2{
+    position:absolute;
+    top:-50vw;
+    left: 50vw;
+}
+
+.bg-circle-3{
+    position:absolute;
+    top: -30vw;
+    left: 70vw;
+}
+.bg-circle-4{
+    position:absolute;
+    top: 150vw;
+    left: -50vw;
+}
+.bg-circle-5{
+    position:absolute;
+    top: 170vw;
+    left: -30vw;
+}
+.outer{
+    margin: 0 auto;
+    background-color:$accent-1;
+    border-radius: 50%;
+    min-height:100vw;
+    min-width:100vw;
+    z-index: -2;
+}
+
+.inner{
+    margin: 0 auto;
+    background-color:$bg-colour-1;
+    border-radius: 50%;
+    min-height:60vw;
+    min-width:60vw;
+    z-index: -1;
+
+}
+

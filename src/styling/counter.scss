@@ -1,6 +1,12 @@
 .counter-container{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     height:100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items:center;
+
 }
 
 .counter {

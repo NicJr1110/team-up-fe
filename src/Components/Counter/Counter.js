@@ -49,8 +49,7 @@ class Counter extends Component {
         return (
         <>
             { stage !== 1 ? null :
-            <div className="flex-col-centre counter-container">
-                
+            <div className="counter-container">
                 <h1>{ children }</h1>
                 <div className="counter">
                     <Button className="btn btn-small" handleClick={ this.handleMinus }>-</Button>
@@ -59,7 +58,8 @@ class Counter extends Component {
                 </div>
                 <Button className="btn btn-main" handleClick={ this.handleSave }>Next</Button>
             </div>
-            }
+            
+            } 
         </>
         );
     }

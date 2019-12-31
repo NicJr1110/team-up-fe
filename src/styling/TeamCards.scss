@@ -1,0 +1,16 @@
+.scrolling-wrapper-flexbox {
+    // display: flex;
+    // flex-wrap: nowrap;
+    // overflow-x: auto;
+    margin: 10px;
+    
+  
+    .card {
+    //   flex: 0 0 auto;
+      background: lightseagreen;
+    //   min-width: 90vw;
+    border: 10px solid white;
+    //   padding: 20px;
+      min-height: 75vh;
+    }
+  }

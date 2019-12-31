@@ -1,0 +1,49 @@
+body{
+    background-color: #A7E2E3;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+}
+
+.background-1{
+  position: relative;
+}
+
+.bg-circle{
+    position:absolute;
+    top:-50vh;
+    margin: 0 auto;
+    background-color:#F2EFEA;
+    border-radius: 100vh;
+    min-height:100vh;
+    min-width:100vw;
+    z-index: -1;
+   
+}
+
+.flex-col-centre{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-row-centre{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title{
+    height: 50vh;
+    h1{
+    color: #394053;
+    }
+    p{
+        color: #394053; 
+    }
+}
+
+.start{
+    height:50vh;
+}

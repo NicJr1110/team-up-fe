@@ -1,0 +1,50 @@
+.btn  {
+  
+  button{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  
+  color: white;
+//   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 1.5rem;
+  
+  /* Media Queries */
+    @media (min-width: 37.5em) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+}
+
+.btn-main  {
+  button{
+    width: 80vw;
+   /* Large, mobile-friendly touch target */
+  
+
+
+  /* Media Queries */
+    @media (min-width: 37.5em) {
+      width: auto; /* Smaller buttons on larger screens */
+    }
+   }
+
+}
+
+.btn-small {
+  button {
+    width: 40px;
+  }
+
+  @media (min-width: 37.5em) {
+    width: auto; /* Smaller buttons on larger screens */
+  }
+}
+

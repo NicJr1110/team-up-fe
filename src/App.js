@@ -5,13 +5,13 @@ import Landing from "./Components/Landing";
 import InputPlayerGroup from "./Components/InputPlayerGroup";
 //import PlayerList from "./Components/PlayerList";
 import TeamSplitter from "./Components/TeamSplitter";
-import TeamCards from "./Components/TeamCards"
+import TeamCards from "./Components/TeamCards";
 
 function App() {
   return (
     <>
       <Landing />
-      <TeamCounter max={ 9 } min={ 2 }>Team</TeamCounter> 
+      <TeamCounter max={ 9 } min={ 2 }>Number of Teams</TeamCounter> 
       <InputPlayerGroup/>
       <TeamSplitter />
       <TeamCards/>

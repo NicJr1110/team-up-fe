@@ -44,7 +44,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .title{
-    height: 50vh;
+    position: absolute;
+    top: 20vh;
+    align-content: center;
     h1{
     color: $primary-colour;
     }
@@ -54,19 +56,33 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 
-.start{
-    height:50vh;
+.stage-title{
+    margin-top: 100px;
+    h1{
+    color: $primary-colour;
+    }
+    p{
+        color: $primary-colour;
+    }
+    
 }
+
+
+
 
 .page-container{
+    display: flex;
+    justify-content: center;
     height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
-.container-25vh{
-    height:25vh;
-}
+// .container-25vh{
+//     height:25vh;
+// }
 
-.container-50vh{
-    height:40vh;
-    overflow:auto;
-}
+// .container-50vh{
+//     height:40vh;
+//     overflow:auto;
+// }

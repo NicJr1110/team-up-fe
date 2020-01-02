@@ -7,6 +7,7 @@ const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
     <>
         { stage !== 2 ? null :
         <>
+            <h2>Add Players</h2>
             <InputPlayer/>
             <PlayerList/>
             <Button 

@@ -4,21 +4,32 @@ background-color: transparent;
 border: 2px solid $primary-colour;
 border-radius: 10px;
 padding: 10px;
-
 font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 sans-serif;
 font-size:1.5rem;
 font-weight: 600;
 line-height: 1;
-margin-top: 1.5rem;
 
 /* Media Queries */
   @media (min-width: 37.5em) {
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+  }
+  &:hover{
+    background-color: $primary-colour;
+    color: white;
+  }
+
+  &:active{
+    background-color: $primary-colour;
+    color: white;
+    transform: scale(0.70);
+  }
+  
+  &:focus {
+    background-color: $primary-colour;
+    color: white;
   }
 }
 
@@ -48,3 +59,11 @@ margin-top: 1.5rem;
   }
 }
 
+.btn-add  {
+  width: 80vw;
+   /* Large, mobile-friendly touch target */
+  /* Media Queries */
+  @media (min-width: 37.5em) {
+      width: auto; /* Smaller buttons on larger screens */
+  }
+}

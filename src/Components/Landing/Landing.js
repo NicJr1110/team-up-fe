@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const Landing = ({ handleClick,stage }) => (
     <React.Fragment>
         { stage !== 0 ? null :
-        <div className="page-container">
+        <div className="landing-container">
             <div className="bg-circle"></div>
             <div className="flex-col-centre title">
                 <h1> TEAM UP</h1>

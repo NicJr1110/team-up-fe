@@ -4,10 +4,10 @@ import PlayerList from "../PlayerList";
 import Button from "../Button/Button";
 
 const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
-    <>
+    <React.Fragment>
         { stage !== 2 ? null :
         <div className="page-container">
-            <h2 class="stage-title">Add Players</h2>
+            <h1 class="stage-title">Add Players</h1>
             <InputPlayer/>
             <PlayerList/>
             <Button 
@@ -17,7 +17,7 @@ const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
             >Next</Button> 
         </div>
         }
-    </>
+    </React.Fragment>
     
 );
 

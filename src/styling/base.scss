@@ -17,7 +17,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 
 html, body {
     overflow:hidden;
-    height:100%;
+    height:100vh;
     margin: 0;
 }
 
@@ -46,7 +46,6 @@ h1,h2,h3,h4,h5,h6 {
 .title{
     position: absolute;
     top: 20vh;
-    align-content: center;
     h1{
     color: $primary-colour;
     }
@@ -57,9 +56,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .stage-title{
-    margin-top: 100px;
+    position: absolute;
+    top: 20vh;
     h1{
     color: $primary-colour;
+    font-size: 3rem;
     }
     p{
         color: $primary-colour;
@@ -72,10 +73,21 @@ h1,h2,h3,h4,h5,h6 {
 
 .page-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     position: relative;
+}
+
+.landing-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    
 }
 
 // .container-25vh{

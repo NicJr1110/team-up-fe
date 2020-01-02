@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
     <>
         { stage !== 2 ? null :
-        <>
+        <div className="page-container">
             <h2>Add Players</h2>
             <InputPlayer/>
             <PlayerList/>
@@ -14,7 +14,7 @@ const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
                 disabled={ players.length < totalTeams ? true : false}
                 handleClick={ handleClick }
             >Next</Button> 
-        </>
+        </div>
         }
     </>
     

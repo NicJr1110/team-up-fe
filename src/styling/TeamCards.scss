@@ -1,21 +1,14 @@
 .scrolling-wrapper-flexbox {
+  min-width:90vw;
+
+  .card {
+    background: rgba(26, 123, 161, 0.5);
+    border-radius: 20px;
+    border: 10px solid transparent;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    min-height: 75vh;
+    color: white;
     
-    margin: 10px;
-    min-width:90vw;
-    
-  
-    .card {
-      flex: 0 0 auto;
-      background: rgba(26, 123, 161, 0.5);
-      border-radius: 20px;
-      border: 10px solid transparent;
-      box-sizing: content-box;
-      
-      
-    
-    //   padding: 20px;
-      min-height: 75vh;
-      color: white;
-      
-    }
   }
+}

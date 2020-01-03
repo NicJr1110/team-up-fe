@@ -3,7 +3,7 @@ import initial from "./initial";
 const saveTeamTotal = (state, { value }) => ({ ...state, totalTeams: value })
 const savePlayerTotal = (state, { value }) => ({ ...state, totalPlayers: value })
 const addPlayer = (state, { name }) => ({...state, players: [...state.players, name]})
-
+const progressStage = (state) => ({...state, stage: state.stage + 1})
 
 function shuffleArray(array) {
 

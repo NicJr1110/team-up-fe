@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import TeamSplitter from "./TeamSplitter";
-import { handleSplitTeam } from "../../Data/Actions/actions";
+import { handleSplitTeam, handleProgress } from "../../Data/Actions/actions";
 
 const mapStateToProps = state => {
     return {

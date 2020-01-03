@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const TeamCards = ({ teams, stage }) => (
     <>
-        { stage !== 3 ? null :
+        { stage !== 4 ? null :
         <Carousel className="scrolling-wrapper-flexbox" touch={ true } interval={ 0 }>
             {teams.map((team, i) => (
                 <Carousel.Item className="card" key={ i }>

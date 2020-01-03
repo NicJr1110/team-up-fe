@@ -3,7 +3,7 @@
 const saveTeamTotal = (state, { value }) => ({ ...state, totalTeams: value })
 const savePlayerTotal = (state, { value }) => ({ ...state, totalPlayers: value })
 const addPlayer = (state, { name }) => ({...state, players: [...state.players, name]})
-
+const progressStage = (state) => ({...state, stage: state.stage + 1});
 
 function shuffleArray(array) {
 
@@ -29,9 +29,9 @@ function splitTeams(arr, chunkCount) {
     return chunks;
 }
 
-const generateTeams = (state) => ({...state, teams: (splitTeams(state.players, state.totalTeams))});
+const generateTeams = (state) => ({...state, teams: (splitTeams(state.players, state.totalTeams)), stage: state.stage + 1});
 
-const progressStage = (state) => ({...state, stage: state.stage + 1});
+
 
 const reducer = (state, action) => {
     switch (action.type) {

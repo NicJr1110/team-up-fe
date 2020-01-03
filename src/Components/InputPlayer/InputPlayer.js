@@ -36,8 +36,8 @@ class InputPlayer extends Component {
     render() {
         let { name } = this.state;
         return (
-        <div>
-            <label>Player Name</label>
+        <div className="input-players">
+            <label>Name</label>
             <input 
                 onChange={ this.handleChangeName }
                 type="text" 
@@ -48,7 +48,8 @@ class InputPlayer extends Component {
             <Button
              disabled={ name === "" ? true : false }
              handleClick={ this.handleSubmit }
-             >Add</Button>
+             className="btn btn-add"
+            >Add</Button>
         </div>
         );
     }

@@ -47,10 +47,10 @@ class Counter extends Component {
         let { value } = this.state;
         let { children, stage } = this.props;
         return (
-        <>
+        <React.Fragment>
             { stage !== 1 ? null :
-            <div className="counter-container">
-                <h1>{ children }</h1>
+            <div className="page-container">
+                <h1 className="stage-title">{ children }</h1>
                 <div className="counter">
                     <Button className="btn btn-small" handleClick={ this.handleMinus }>-</Button>
                     <p className="counter-value">{ value }</p>
@@ -60,7 +60,7 @@ class Counter extends Component {
             </div>
             
             } 
-        </>
+        </React.Fragment>
         );
     }
 }

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #A7E2E3;
+    background-image: $bg-colour-1
 }
   
 
@@ -32,11 +32,9 @@ html, body {
     position: absolute;
     top: 60vh;
     h1{
-    color: $primary-colour;
     margin: 0;
     }
     p{
-        color: $primary-colour;
         margin: 1px
     }
     

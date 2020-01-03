@@ -1,4 +1,4 @@
-
+import initial from "./initial";
 
 const saveTeamTotal = (state, { value }) => ({ ...state, totalTeams: value })
 const savePlayerTotal = (state, { value }) => ({ ...state, totalPlayers: value })
@@ -29,9 +29,15 @@ function splitTeams(arr, chunkCount) {
     return chunks;
 }
 
-const generateTeams = (state) => ({...state, teams: (splitTeams(state.players, state.totalTeams))});
+const generateTeams = (state) => ({...state, teams: (splitTeams(state.players, state.totalTeams)), stage: state.stage + 1});
 
-const progressStage = (state) => ({...state, stage: state.stage + 1});
+const resetApp = (state) => ({...state, 
+    totalTeams: initial.totalTeams,
+    totalPlayers: initial.totalPlayers,
+    stage: initial.stage,
+    players: initial.players,
+    teams: initial.teams,
+ })
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -40,6 +46,7 @@ const reducer = (state, action) => {
         case "addPlayer": return addPlayer(state,action);
         case "splitTeams": return generateTeams(state);
         case "progressStage": return progressStage(state);
+        case "resetApp": return resetApp(state);
         default: return state;
     }
 }

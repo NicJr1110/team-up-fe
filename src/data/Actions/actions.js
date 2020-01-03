@@ -32,3 +32,9 @@ export const handleProgress = () => {
         type: "progressStage"
     }
 }
+
+export const handleReset = () => {
+    return {
+        type: "resetApp"
+    }
+}

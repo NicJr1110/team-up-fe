@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38564be900ccdad4bcf0f9b1919e7d84",
+    "revision": "fde2a0bafde4961a7e0d653c333ddc38",
     "url": "/team-up-fe/index.html"
   },
   {
-    "revision": "3e5a670223abc3115c24",
-    "url": "/team-up-fe/static/css/main.2173439d.chunk.css"
+    "revision": "347f14f322a472b4d32c",
+    "url": "/team-up-fe/static/css/main.39d6e7ea.chunk.css"
   },
   {
     "revision": "518c5986a0b657ad81fa",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/team-up-fe/static/js/2.3fb8110a.chunk.js.LICENSE"
   },
   {
-    "revision": "3e5a670223abc3115c24",
+    "revision": "347f14f322a472b4d32c",
     "url": "/team-up-fe/static/js/main.76a47516.chunk.js"
   },
   {

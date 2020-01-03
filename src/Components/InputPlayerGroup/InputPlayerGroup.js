@@ -7,7 +7,7 @@ const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
     <React.Fragment>
         { stage !== 2 ? null :
         <div className="page-container">
-            <h1 class="stage-title">Add Players</h1>
+            <h1 className="stage-title">Add Players</h1>
             <InputPlayer/>
             <PlayerList/>
             <Button 

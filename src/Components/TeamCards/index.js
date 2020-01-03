@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import TeamCards from "./TeamCards";
+import { handleReset } from "../../Data/Actions/actions";
 
 
 const mapStateToProps = ({ stage, teams }) => {
@@ -9,4 +10,10 @@ const mapStateToProps = ({ stage, teams }) => {
     };
 };
 
-export default connect(mapStateToProps)(TeamCards);
+const mapDispatchToProps = dispatch => {
+    return{
+        handleClick: () => dispatch(handleReset())
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TeamCards);

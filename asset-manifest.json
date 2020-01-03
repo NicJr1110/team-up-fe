@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/team-up-fe/static/css/main.2173439d.chunk.css",
+    "main.js": "/team-up-fe/static/js/main.76a47516.chunk.js",
+    "main.js.map": "/team-up-fe/static/js/main.76a47516.chunk.js.map",
+    "runtime-main.js": "/team-up-fe/static/js/runtime-main.d125d797.js",
+    "runtime-main.js.map": "/team-up-fe/static/js/runtime-main.d125d797.js.map",
+    "static/js/2.3fb8110a.chunk.js": "/team-up-fe/static/js/2.3fb8110a.chunk.js",
+    "static/js/2.3fb8110a.chunk.js.map": "/team-up-fe/static/js/2.3fb8110a.chunk.js.map",
+    "index.html": "/team-up-fe/index.html",
+    "precache-manifest.8f4e103a4234e5c629ce47e6c907dd4a.js": "/team-up-fe/precache-manifest.8f4e103a4234e5c629ce47e6c907dd4a.js",
+    "service-worker.js": "/team-up-fe/service-worker.js",
+    "static/css/main.2173439d.chunk.css.map": "/team-up-fe/static/css/main.2173439d.chunk.css.map",
+    "static/js/2.3fb8110a.chunk.js.LICENSE": "/team-up-fe/static/js/2.3fb8110a.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d125d797.js",
+    "static/js/2.3fb8110a.chunk.js",
+    "static/css/main.2173439d.chunk.css",
+    "static/js/main.76a47516.chunk.js"
+  ]
+}

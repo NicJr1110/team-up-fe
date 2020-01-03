@@ -1,7 +1,8 @@
 
 button{
 background-color: transparent;
-border: 2px solid $primary-colour;
+border: 2px solid $sec-colour;
+color:$sec-colour;
 border-radius: 10px;
 padding: 10px;
 font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,19 +18,20 @@ line-height: 1;
     padding-right: 2rem;
   }
   &:hover{
-    background-color: $primary-colour;
-    color: white;
+    background-color: $sec-colour;
+    color: $primary-colour;
   }
 
   &:active{
-    background-color: $primary-colour;
-    color: white;
+    background-color: $sec-colour;
+    color: $primary-colour;
     transform: scale(0.70);
   }
   
   &:focus {
-    background-color: $primary-colour;
-    color: white;
+    background-color: $sec-colour;
+    color: $primary-colour;
+
   }
 }
 

@@ -5,8 +5,8 @@ import Button from '../Button/Button';
 const TeamCards = ({ teams, stage, handleClick }) => (
     <React.Fragment>
         { stage !== 4 ? null :
-        <div>
-            <Carousel className="scrolling-wrapper-flexbox" touch={ true } interval={ 0 }>
+        <div className="page-container">
+            <Carousel className="scrolling-wrapper" touch={ true } interval={ 0 }>
                 {teams.map((team, i) => (
                     <Carousel.Item className="card" key={ i }>
                         <h4>Team { i + 1}</h4>

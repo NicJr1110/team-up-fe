@@ -5,8 +5,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #A7E2E3;
-    color: $primary-colour;
+    color: $font;
     font-size: 20px;
 }
   
@@ -26,7 +25,7 @@ html, body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: $primary-colour;
+    color: $font;
 }
 
 h1{

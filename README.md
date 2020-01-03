@@ -4,6 +4,9 @@
 This my final Project set by the DevelopMe BootCamp. I have been tasked with creating a team selector application. 
 This repo contains the front end work which will me done using mainly React and Redux, I will be looking to use Sass for the Css styling. 
 
+
+# Deployment Date
+3rd Jan
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

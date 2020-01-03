@@ -45,12 +45,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .title{
     position: absolute;
-    top: 20vh;
+    top: 60vh;
     h1{
     color: $primary-colour;
+    margin: 0;
     }
     p{
         color: $primary-colour;
+        margin: 1px
     }
     
 }

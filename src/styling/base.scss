@@ -1,19 +1,8 @@
 body {
     margin: 0;
-    font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: #A7E2E3;
-    color: $primary-colour;
-    font-size: 20px;
 }
   
-code {
-font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 html, body {
     overflow:hidden;
@@ -23,10 +12,6 @@ html, body {
 
 *{
     box-sizing: border-box;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    color: $primary-colour;
 }
 
 

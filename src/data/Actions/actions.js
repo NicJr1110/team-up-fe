@@ -38,3 +38,10 @@ export const handleReset = () => {
         type: "resetApp"
     }
 }
+
+export const handleDelete = (index) => {
+    return {
+        type: "deletePlayer",
+        index: index,
+    }
+}

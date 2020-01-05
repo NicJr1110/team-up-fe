@@ -37,7 +37,17 @@ const resetApp = (state) => ({...state,
     stage: initial.stage,
     players: initial.players,
     teams: initial.teams,
- })
+})
+
+const splice = (arr, index)=> {
+        return arr.filter ((_, i) => {
+            return i !== index
+        }
+    );
+} 
+
+const deletePlayer = (state, { index }) => ({...state, players: splice(state.players, index)})
+
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -47,6 +57,7 @@ const reducer = (state, action) => {
         case "splitTeams": return generateTeams(state);
         case "progressStage": return progressStage(state);
         case "resetApp": return resetApp(state);
+        case "deletePlayer": return deletePlayer(state, action);
         default: return state;
     }
 }

@@ -18,8 +18,7 @@ class InputPlayer extends Component {
             name: e.currentTarget.value,
         });
     }
-
-    handleSubmit(e){
+      handleSubmit(e){
         e.preventDefault();
 
         let { handleAddPlayer } = this.props;

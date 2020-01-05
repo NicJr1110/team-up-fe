@@ -1,3 +1,5 @@
+// all button styling
+
 
 button{
 background-color: transparent;
@@ -11,16 +13,13 @@ sans-serif;
 font-size:1.5rem;
 font-weight: 600;
 line-height: 1;
-&:disabled{
-  border: 2px solid grey;
-  color: grey;
-}
-
-/* Media Queries */
-  @media (min-width: 37.5em) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  
+/* States of the Buttomn */
+  &:disabled{
+    border: 2px solid grey;
+    color: grey;
   }
+
   &:hover{
     background-color: $sec-colour;
     color: $primary-colour;
@@ -38,6 +37,11 @@ line-height: 1;
 
   }
 
+  /* Media Queries */
+  @media (min-width: 37.5em) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .btn-main  {

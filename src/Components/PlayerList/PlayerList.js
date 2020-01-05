@@ -14,6 +14,7 @@ const PlayerList = ({
             </thead>
             <tbody>
                {players.map((player, i) => {
+                  // used to parsed the index value into the handleClick function which passes it in turn up to the redux state
                   let index = i;
                   const handleDeleteName =() => { 
                      handleClick(index) 

@@ -2,12 +2,44 @@
 # Team Up Front End
 
 This my final Project set by the DevelopMe BootCamp. I have been tasked with creating a team selector application. 
-This repo contains the front end work which will me done using mainly React and Redux, I will be looking to use Sass for the Css styling. 
+This repo contains the front end work which will me done using mainly React and Redux, I will be looking to use SASS for the CSS styling. 
+
+## Platforms
+
+This app has been created to be predominanlty used on mobile be will respond to screen size. The App has been tested on the following devices
+ - iPhone X
+ - iPad
+ - iPad Pro
+ - iPhone 6/7/8 + Plus varieties
+ 
+ It is not supported with the iPhone 5 SE.
 
 
 # Deployment Date
 3rd Jan
+5th Jan - Updates including Mobile Responsive FIX & Delete player names
+
 ---
+
+# Component Library
+## Components 
+1. Button 
+2. Counter 
+3. Input Player Field 
+4. Player List Table
+5. Landing Page
+6. Team Cards Carousel - bootstrap used
+
+
+# Deployment
+
+Run `npm run deploy` in terminal
+
+# Colour Scheme
+Can be found in the variable.scss file. See Comments in file for help in choices light or dark. 
+
+# React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

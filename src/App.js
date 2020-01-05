@@ -5,6 +5,7 @@ import Application from "./Components/Application";
 function App() {
   return (
     <>
+      {/* // separated these out due to set up of background using divs */}
       <Landing />
       <Application/>
     </>

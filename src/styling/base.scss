@@ -43,16 +43,18 @@ html, body {
 .stage-title{
     position: absolute;
     top: 20vh;
-    h1{
-    color: $primary-colour;
-    font-size: 3rem;
-    }
-    p{
-        color: $primary-colour;
-    }
-    
+    margin: 0;
+    text-align: center;
 }
 
+.page-content{
+    position: absolute;
+    top: 20vh;
+    h1{
+    text-align: center;
+    margin: 0;
+    }
+}
 
 
 

@@ -7,9 +7,12 @@ const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
     <React.Fragment>
         { stage !== 2 ? null :
         <div className="page-container">
-            <h1 className="stage-title">Add Players</h1>
-            <InputPlayer/>
-            <PlayerList/>
+            <div className="page-content">
+                <h1>Add Players</h1>
+            
+                <InputPlayer/>
+                <PlayerList/>
+            </div>
             <Button 
                 disabled={ players.length < totalTeams ? true : false}
                 handleClick={ handleClick }
@@ -17,8 +20,7 @@ const InputPlayerGroup = ({ totalTeams, players, stage, handleClick }) => (
             >Next</Button> 
         </div>
         }
-    </React.Fragment>
-    
+    </React.Fragment>  
 );
 
 export default InputPlayerGroup

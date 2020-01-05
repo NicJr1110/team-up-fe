@@ -4,6 +4,10 @@
 This my final Project set by the DevelopMe BootCamp. I have been tasked with creating a team selector application. 
 This repo contains the front end work which will me done using mainly React and Redux, I will be looking to use SASS for the CSS styling. 
 
+# Site URL
+
+https://nicjr1110.github.io/team-up-fe
+
 ## Platforms
 
 This app has been created to be predominanlty used on mobile be will respond to screen size. The App has been tested on the following devices
@@ -30,6 +34,11 @@ This app has been created to be predominanlty used on mobile be will respond to 
 5. Landing Page
 6. Team Cards Carousel - bootstrap used
 
+# Redux State
+ - totalTeams - integer
+ - stage - integer
+ - players - array strings
+ - teams - array of arrays
 
 # Deployment
 

@@ -4,12 +4,14 @@ const Button = ({
     handleClick,
     children,
     disabled,
-    className
+    className,
+    type
 }) => (
     <button 
      onClick={ handleClick }
      disabled={ disabled ? true : null}
      className= { className }
+     type= { type }
     >{ children }</button> 
 );
 

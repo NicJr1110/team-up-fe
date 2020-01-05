@@ -57,6 +57,9 @@ This app has been created to be predominanlty used on mobile be will respond to 
  - players - array strings
  - teams - array of arrays
 
+# Environment 
+The App has been built as a React app and you can run `npm install` to load the correct packages used
+
 # Deployment
 
 Run `npm run deploy` in terminal

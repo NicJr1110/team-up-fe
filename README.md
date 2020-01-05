@@ -4,6 +4,23 @@
 This my final Project set by the DevelopMe BootCamp. I have been tasked with creating a team selector application. 
 This repo contains the front end work which will me done using mainly React and Redux, I will be looking to use SASS for the CSS styling. 
 
+## Function Notes
+
+### Initial Questions
+#### How many teams? 
+I want a counter to allow user to select anything from 2 to 9. 
+
+#### Players?
+I want users just to enter as many players as they want. A delete player button is required ( not MVP)
+
+#### Team Names? 
+This isnt essential if I have time ( Future dev?)
+
+#### Split Button?
+This will split the players evenly across set number of teams, I want it to be ablet o account for remainders and add to each team in turn . E.g. 7  between 3 teams would equal 3, 2, 2 split.
+
+---
+
 # Site URL
 
 https://nicjr1110.github.io/team-up-fe

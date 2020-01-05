@@ -20,8 +20,8 @@ This app has been created to be predominanlty used on mobile be will respond to 
 
 
 # Deployment Date
-3rd Jan
-5th Jan - Updates including Mobile Responsive FIX & Delete player names
+ - 3rd Jan
+ - 5th Jan - Updates including Mobile Responsive FIX & Delete player names
 
 ---
 

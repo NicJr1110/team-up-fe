@@ -16,7 +16,10 @@ html, body {
     box-sizing: border-box;
 }
 
-
+img{
+   position: absolute;
+   top: 10vh;
+}
 // general flex box classes to be used as an when
 .flex-col-centre{
     display:flex;

@@ -1,7 +1,7 @@
 .scrolling-wrapper {
   min-width:90vw;
   position: absolute;
-  top: -10vh;
+  top: 0vh;
 
   .card {
     text-align: center;
@@ -11,7 +11,7 @@
     border: 10px solid transparent;
     box-sizing: border-box;
     flex: 0 0 auto;
-    min-height: 70vh;
+    min-height: 45vh;
     color: white;
     ul{
       padding: 0;
